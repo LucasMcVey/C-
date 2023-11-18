@@ -1,0 +1,10 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 1: Quite Good Numbers
+ */
+
+int main(int argc, char *argv[])
+{
+
+    return 0;
+}

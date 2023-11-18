@@ -1,0 +1,109 @@
+//
+// COMP2711,8801 Computer Programming 2
+// Flinders University
+//
+
+#include "Rolodex.h"
+
+
+
+Rolodex::Rolodex() {
+    sentinel_ = new RolodexItem;
+    sentinel_ -> next_ = sentinel_;
+    sentinel_ -> prev_ = sentinel_;
+    current_ = sentinel_;
+}
+
+
+/**
+ * Returns true if the Rolodex is positioned before the first card.
+ */
+bool Rolodex::isBeforeFirst() const
+{
+    // Replace with real code
+
+    return (Rolodex::sentinel_ == current_ );
+}
+
+/**
+ * Returns true if the Rolodex is positioned after the last card.
+ */
+bool Rolodex::isAfterLast() const
+{
+    // Replace with real code
+    return (Rolodex::sentinel_ == current_ );
+}
+
+/**
+ * Rotates the Rolodex one card forwards.
+ */
+void Rolodex::rotateForward()
+{
+    current_ = current_ -> next_;
+}
+
+/**
+ * Rotates the Rolodex one card backwards.
+ */
+void Rolodex::rotateBackward()
+{
+    current_ = current_ -> prev_;
+}
+
+/**
+ * Returns the value of the current card.
+ */
+const std::string& Rolodex::currentValue() const
+{
+    // Temporary hack to keep the compiler happy
+    // Replace both lines with real code
+    return current_ -> value_;
+}
+
+/**
+ * Inserts a new card after the current card and positions the Rolodex
+ * at the newly inserted card.
+ *
+ * @param value The value to insert into a new card.
+ */
+void Rolodex::insertAfterCurrent(const std::string& value)
+{
+    RolodexItem* after = new RolodexItem;
+
+    after -> value_ = value;
+    after-> next_ = current_ -> next_;
+    after -> prev_ = current_;
+    current_ -> next_ -> prev_ = after;
+    current_ -> next_ = after;
+
+    current_ = after;
+}
+
+/**
+ * Inserts a new card before the current card and positions the Rolodex
+ * at the newly inserted card.
+ *
+ * @param value The value to insert into a new card.
+ */
+void Rolodex::insertBeforeCurrent(const std::string &value)
+{
+    RolodexItem* before = new RolodexItem;
+
+    before -> value_ = value;
+    before -> next_ = current_;
+    before -> prev_ = current_ -> prev_;
+    current_ -> prev_ -> next_ = before;
+    current_ -> prev_ = before;
+
+    current_ = before;
+}
+
+void Rolodex::delete_current() {
+    current_ -> prev_ -> next_ = current_ -> next_;
+    current_ -> next_ -> prev_ = current_ -> prev_;
+    RolodexItem* deletethis = current_;
+    current_ = current_ -> next_;
+    delete deletethis;
+}
+
+

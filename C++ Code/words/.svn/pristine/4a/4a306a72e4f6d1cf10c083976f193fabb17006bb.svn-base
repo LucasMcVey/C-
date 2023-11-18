@@ -1,0 +1,140 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 4: Words
+ */
+
+#include <iostream>
+#include <string>
+#include <unistd.h>
+#include <utility>
+#include <vector>
+#include <algorithm>
+#include <sstream>
+
+using namespace std;
+
+//
+//template <class T>
+//class MyVector {
+//public:
+//    typedef T* iterator; // creates an alias of the T* type called iterator
+//    MyVector() {}
+//
+//
+//    iterator begin() {
+//        return &items[0];
+//    }
+//    iterator end() {
+//        return &items[used];
+//    }
+//    int size() {
+//        return used;
+//    }
+//    iterator insert (iterator position, const T& item) {
+//        for (MyVector<T>::iterator i = &items[998]; i >= position; i--) {
+//            *i = *(i - 1);
+//        }
+//        *position = item;
+//        ++used;
+//        return position;
+//
+//    }
+//
+//
+//private:
+//    T items[1000];
+//    int used = 0;
+//};
+
+
+struct WordInfo {
+    string text;
+    int count = 0;
+
+
+
+};
+
+
+
+
+int main(int argc, char** argv) {
+
+//MyVector<string> words;
+    vector<WordInfo> test;
+
+    enum {
+        total,
+        unique,
+        individual
+    } mode = total;
+
+    for (int c; (c = getopt(argc, argv, "tui")) != -1;) {
+        switch (c) {
+            case 't':
+                mode = total;
+                break;
+            case 'u':
+                mode = unique;
+                break;
+            case 'i':
+                mode = individual;
+                break;
+
+        }
+
+    }
+    argc -= optind;
+    argv += optind;
+
+    string word;
+    int count = 0;
+
+
+    while (cin >> word) {
+        count += 1;
+        int duplicate = 0;
+        for (int i = 0; i < test.size(); i++) {
+            if (test[i].text == word) {
+                duplicate = 1;
+                test[i].count += 1;
+            }
+        }
+            if (!duplicate) {
+
+                WordInfo newWord;
+                newWord.text = word;
+                newWord.count = 1;
+
+                test.push_back(newWord);
+            }
+
+
+        }
+
+
+        switch (mode) {
+            case total:
+                cout << "Total: " << count << '\n';
+                break;
+            case unique:
+                cout << "Unique: " << test.size() << '\n';
+                break;
+            case individual:
+                for (int i = 0; i < test.size(); i++) {
+                    cout << test[i].text << ": " << test[i].count << endl;
+                }
+                break;
+
+
+        }
+
+
+
+
+    return 0;
+}
+
+
+
+

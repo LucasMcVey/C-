@@ -1,0 +1,198 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 3: HP-35
+ */
+
+#include <iostream>
+#include <string>
+#include <cmath>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class HPStack {
+
+    double valuestack [6] = {0.0,0.0,0.0,0.0,0.0,0.0};
+    double memory [4] = {0.0,0.0,0.0,0.0};
+
+public:
+
+    void push(double x) {
+
+        valuestack[5] = valuestack[4];
+        valuestack[4] = valuestack[3];
+        valuestack[3] = valuestack[2];
+        valuestack[2] = valuestack[1];
+        valuestack[1] = valuestack[0];
+
+        valuestack[0] = x;
+
+    }
+
+    double pop() {
+        double x = valuestack[0];
+        valuestack[0] = valuestack[1];
+        valuestack[1] = valuestack[2];
+        valuestack[2] = valuestack[3];
+        valuestack[3] = valuestack[4];
+        valuestack[4] = valuestack[5];
+
+        return x;
+    }
+    void sto(double m) {
+        memory[0] = m;
+    }
+
+    void rcl(double m)
+    {
+        m = memory[0];
+        push(m);
+    }
+
+    void clr() {
+        memset(valuestack, 0, sizeof(valuestack));
+    }
+
+    void swap() {
+
+        valuestack[5] = valuestack[3];
+        valuestack[3] = valuestack[4];
+        valuestack[4] = valuestack[5];
+        valuestack[2] = valuestack[0];
+        valuestack[0] = valuestack[1];
+        valuestack[1] = valuestack[2];
+    }
+
+    void enter() {
+        valuestack[5] = valuestack[4];
+        valuestack[4] = valuestack[3];
+        valuestack[3] = valuestack[2];
+        valuestack[2] = valuestack[1];
+        valuestack[1] = valuestack[0];
+    }
+
+    double peek() {
+        return valuestack[0];
+    }
+};
+
+int main(int argc, char* argv[])
+{
+
+    HPStack stack;
+
+    string line;
+    while (getline(cin, line)) {
+        transform(line.begin(), line.end(), line.begin(), ::toupper);
+        stringstream expression(line);
+        string token;
+        while (expression >> token) {
+            if (isdigit(token[0])) {
+                stack.push(atof(token.data()));
+            }
+            else if (token=="+") { // similar for other arithmetic ops
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(y+x);
+            }
+            else if (token=="-") {
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(y-x);
+            }
+            else if (token=="/") {
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(y/x);
+            }
+            else if (token=="*") {
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(y*x);
+            }
+            else if (token=="PI") {
+                double x = stack.pop();
+                stack.push(x = M_PI);
+            }
+            else if (token=="SIN") {
+                double x = stack.pop();
+                stack.push(sin(x));
+            }
+            else if (token=="SQRT") {
+                double x = stack.pop();
+                stack.push(sqrt(x));
+            }
+            else if (token=="LOG") {
+                double x = stack.pop();
+                stack.push(log10(x));
+            }
+            else if (token=="CHS") {
+                double x = stack.pop();
+                stack.push(abs(x));
+            }
+            else if (token=="EXP") {
+                double x = stack.pop();
+                stack.push(exp (x));
+            }
+            else if (token=="LN") {
+                double x = stack.pop();
+                stack.push(log( x));
+            }
+            else if (token=="RECIP") {
+                double x = stack.pop();
+                stack.push(1 / x);
+            }
+            else if (token=="ARCTAN") {
+                double x = stack.pop();
+                stack.push(atan(x));
+            }
+            else if (token=="COS") {
+                double x = stack.pop();
+                stack.push(cos( x));
+            }
+            else if (token=="POW") {
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(pow(x, y));
+            }
+            else if (token=="STO") {
+                double x = stack.peek();
+                stack.sto( x);
+            }
+            else if (token=="RCL") {
+                double x = 0;
+                stack.rcl(x);
+            }
+            else if (token=="CLR") {
+                stack.clr();
+            }
+            else if (token=="CLX") {
+                double x = stack.pop();
+                stack.push(x = x / x);
+            }
+            else if (token=="SWAP") {
+                stack.swap();
+//                double x = stack.pop();
+//                double y = stack.pop();
+//                double t;
+//                double r;
+//
+//                t = x;
+//                r = y;
+//                y = t;
+//                x = r;
+
+            }
+            else if (token=="ROLL") {
+                stack.pop();
+            }
+            else if (token=="ENTER") {
+                stack.enter();
+            }
+        }
+
+        cout << stack.peek() << endl;
+
+    }
+    return 0;
+}

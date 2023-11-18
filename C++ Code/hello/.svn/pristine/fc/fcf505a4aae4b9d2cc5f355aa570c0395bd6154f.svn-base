@@ -1,0 +1,54 @@
+#include <iostream>
+#include<bits/stdc++.h>
+
+
+
+using namespace std;
+
+int main()
+{
+    string name;
+    string name2;
+    string name3;
+    string name4;
+
+
+
+
+
+    getline(cin, name);
+    if(name.empty()) {
+        cout << "Hello, CP2 " << endl;
+    }
+    else {
+        getline(cin, name2);
+        getline(cin, name3);
+        getline(cin, name4);
+
+
+        transform(name.begin(), name.end(), name.begin(), ::tolower);
+        name[0] = toupper(name[0]);
+
+        transform(name2.begin(), name2.end(), name2.begin(), ::tolower);
+        name2[0] = toupper(name2[0]);
+
+        transform(name3.begin(), name3.end(), name3.begin(), ::tolower);
+        name3[0] = toupper(name3[0]);
+
+        transform(name4.begin(), name4.end(), name4.begin(), ::tolower);
+        name4[0] = toupper(name4[0]);
+
+
+        cout << "Hello, " << name << endl;
+        cout << "Hello, " << name2 << endl;
+        cout << "Hello, " << name3 << endl;
+        cout << "Hello, " << name4 << endl;
+
+
+
+        }
+    return 0;
+    }
+
+
+

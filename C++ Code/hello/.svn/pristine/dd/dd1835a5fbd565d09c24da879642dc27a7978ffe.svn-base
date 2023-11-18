@@ -1,0 +1,30 @@
+#include <iostream>
+#include<bits/stdc++.h>
+#include <string>
+#include <cctype>
+
+
+using namespace std;
+
+int main()
+{
+    std::string name;
+
+    std::cout <<  "";
+
+    while(getline(std::cin, name)) {
+        if(name.empty()) {
+            std::cout << "Hello, CP2 " << std::endl;
+            return 0;
+        }
+        else
+            transform(name.begin(), name.end(), name.begin(), ::tolower);
+           name[0] = toupper(name[0]);
+           std::cout << "Hello, " << name << std::endl;
+
+
+    }
+
+
+
+}

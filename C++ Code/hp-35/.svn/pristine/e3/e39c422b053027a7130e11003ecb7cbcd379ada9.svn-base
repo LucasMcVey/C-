@@ -1,0 +1,66 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 3: HP-35
+ */
+
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+
+class HPStack {
+    double valuestack [5] = {0.0,0.0,0.0,0.0,0.0};
+    double x = 0;
+public:
+    void push(double x) {
+        valuestack[4] = valuestack[3];
+        valuestack[3] = valuestack[2];
+        valuestack[2] = valuestack[1];
+        valuestack[1] = valuestack[0];
+        valuestack[0] = x;
+
+    }
+    double pop() {
+        double x = valuestack[0];
+        valuestack[0] = valuestack[1];
+        valuestack[1] = valuestack[2];
+        valuestack[2] = valuestack[3];
+        valuestack[3] = valuestack[4];
+
+        return x;
+    }
+    double peek() {
+        if (valuestack[2] == 9)
+        {
+            return valuestack[2];
+        }
+        else{
+            return valuestack[0];
+        }
+
+    }
+
+};
+
+int main(int argc, char* argv[])
+{
+    HPStack stack;
+    string line;
+    while (getline(cin, line)) {
+        stringstream expression(line);
+        string token;
+        while (expression >> token) {
+            if (isdigit(token[0])) {
+                stack.push(atof(token.data()));
+            }
+            else if (token=="+") { // similar for other arithmetic ops
+                double x = stack.pop();
+                double y = stack.pop();
+                stack.push(y + x);
+            }
+        }
+        cout << stack.peek() << endl;
+    }
+    return 0;
+}

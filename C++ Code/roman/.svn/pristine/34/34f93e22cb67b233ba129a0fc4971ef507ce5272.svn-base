@@ -1,0 +1,46 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 2: Roman Numbers
+ */
+
+#include <iostream>
+#include "cctype"
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+
+    string input;
+
+    string Roman[] = {"", "I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+    string ix = "IX";
+
+    while(getline(cin, input)) {
+        if(input.empty()) {
+            return 0;
+        }
+
+        transform(input.begin(), input.end(), input.begin(), ::toupper);
+        for (int i =0; i < 10; i++) {
+            if (input == Roman[i]) {
+
+                cout << i << endl;
+            }
+
+
+     }
+//        if (input == ix) {
+//            cout << 9 << endl;
+//
+//        }
+
+
+
+
+    }
+
+
+    return 0;
+}

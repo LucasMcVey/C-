@@ -1,0 +1,167 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 2: Roman Numbers
+ */
+
+#include <iostream>
+#include "cctype"
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+
+
+
+    string input;
+
+    string RomanUnits[] = {"", "I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+
+    string RomanTens[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+
+    string RomanHundreds[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+
+    string RomanThousands[] = {"", "M", "MM", "MMM"};
+
+    string ArabicDigits[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+
+    bool ArabDigits = false;
+    int n = 0;
+    int* p = &n;
+    int* q;
+    int total =0;
+
+
+        while (getline(cin, input)) {
+
+            if(input.empty()) {
+                return 0;
+
+            }
+
+
+                transform(input.begin(), input.end(), input.begin(), ::toupper);
+                for (int i =3; i >= 0; i--) {
+
+                    int s = RomanThousands[i].size();
+                    int s2 = ArabicDigits[i].size();
+
+                    if (input.substr(n,s2) == ArabicDigits[i]) {
+
+                        ArabDigits = true;
+
+                        total = total + i * 1000;
+
+                        n++;
+                        int *p = &n;
+                        cout << RomanThousands[i] << flush;
+                    }
+
+                    if (input.substr(*p,s) == RomanThousands[i])
+                    {
+
+                        total = total + i * 1000;
+
+
+                        q = p; *q = *q + s;
+                    }
+
+
+
+                }
+
+                for (int i =9; i > 0; i--) {
+
+                    int s = RomanHundreds[i].size();
+                    int s2 = ArabicDigits[i].size();
+
+                    if (input.substr(n,s2) == ArabicDigits[i]) {
+
+                        ArabDigits = true;
+
+                        total = total + i * 100;
+                        n++;
+                        int *p = &n;
+                        cout << RomanHundreds[i] << flush;
+                    }
+
+                    if (input.substr(*p,s) == RomanHundreds[i])
+                    {
+
+                        total = total + i * 100;
+                        q = p; *q = *q + s;
+                    }
+
+                }
+
+                for (int i =9; i >= 0; i--) {
+
+                    int s = RomanTens[i].size();
+                    int s2 = ArabicDigits[i].size();
+
+                    if (input.substr(n,s2) == ArabicDigits[i]) {
+                        ArabDigits = true;
+
+                        total = total + i * 10;
+                        n++;
+                        int *p = &n;
+                        cout << RomanTens[i] << flush;
+                    }
+                    if (input.substr(*p,s) == RomanTens[i])
+                    {
+
+
+                        total = total + i * 10;
+                        q = p; *q = *q + s;
+                    }
+
+                }
+
+
+                for (int i =9; i >= 0; i--) {
+
+                    int s = RomanUnits[i].size();
+                    int s2 = ArabicDigits[i].size();
+
+                    if (input.substr(n,s2) == ArabicDigits[i]) {
+                        ArabDigits = true;
+
+                        total = total + i * 1;
+                        n++;
+                        int *p = &n;
+                        cout << RomanUnits[i] << endl;
+                    }
+
+                    if (input.substr(*p,s) == RomanUnits[i])
+                    {
+
+
+                        total = total + i;
+                        q = p; *q = *q + s;
+                    }
+
+                }
+            if (ArabDigits == false) {
+                cout << total << endl;
+            }
+
+            ArabDigits == true;
+
+            *p = *p - *p;
+            total = total - total;
+
+
+
+
+        }
+
+
+
+
+
+     }
+
+
+
+

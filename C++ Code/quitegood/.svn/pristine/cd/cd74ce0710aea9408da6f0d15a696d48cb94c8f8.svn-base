@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="quitegood" targetName="quitegood" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="341c0f77-c484-46ec-89dd-cb49ff191a89" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quitegood.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quitegood.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quitegood.dir/quitegood.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quitegood.dir/quitegood.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quitegood.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/quitegood.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CpLHB4Z0MNBpK3tQHfG1S5K3JG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/lucas/OneDrive - Flinders/Topics/Year 2/Semester 2/COMP2711 - Computer Programming 2/Lecture Slides/Week 2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="quitegood" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="99999 6" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="quitegood" TARGET_NAME="quitegood" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quitegood" RUN_TARGET_NAME="quitegood">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\lucas\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\quitegood" />
+          <option name="myCopyRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\quitegood" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\quitegood" />
+          <option name="myCopyRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\quitegood" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="341c0f77-c484-46ec-89dd-cb49ff191a89" name="Changes" comment="" />
+      <created>1659494488542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659494488542</updated>
+      <workItem from="1659494490436" duration="1938000" />
+      <workItem from="1659496455773" duration="4488000" />
+      <workItem from="1659520015701" duration="102000" />
+      <workItem from="1659568475641" duration="2821000" />
+      <workItem from="1659576431983" duration="1111000" />
+      <workItem from="1659613697085" duration="44000" />
+      <workItem from="1659663575615" duration="5626000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1659494572934</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659494572934</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1659665544573</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659665544574</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1659666798545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659666798545</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <created>1659673090078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659673090078</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1659673131619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659673131619</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <created>1659673724419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659673724419</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1659673832436</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659673832436</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1659673998023</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659673998023</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

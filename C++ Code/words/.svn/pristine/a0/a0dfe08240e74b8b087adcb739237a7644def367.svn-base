@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="words" targetName="words" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="410fff6c-81aa-407f-8a7a-ea502b43846c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/words.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1c6mTkUFg8GUG0vAIdWHNg6U17w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;307&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;307&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;307&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;306&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;307&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;306&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucas/OneDrive - Flinders/Topics/Year 2/Semester 2/COMP2711 - Computer Programming 2/Workshops/C++ Code&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="words" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-i" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$/test.txt" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="words" TARGET_NAME="words" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="words" RUN_TARGET_NAME="words">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\lucas\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\words" />
+          <option name="myCopyRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\words" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\words" />
+          <option name="myCopyRoot" value="C:\Users\lucas\OneDrive - Flinders\Topics\Year 2\Semester 2\COMP2711 - Computer Programming 2\Workshops\C++ Code\words" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="410fff6c-81aa-407f-8a7a-ea502b43846c" name="Default Changelist" comment="" />
+      <created>1589857426824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589857426824</updated>
+      <workItem from="1589857430164" duration="796000" />
+      <workItem from="1662605171266" duration="435000" />
+      <workItem from="1662876909811" duration="20376000" />
+      <workItem from="1662945623935" duration="2289000" />
+      <workItem from="1662948641742" duration="6345000" />
+      <workItem from="1662968930102" duration="3012000" />
+      <workItem from="1663042716927" duration="4000" />
+      <workItem from="1663122347661" duration="7579000" />
+      <workItem from="1663462966864" duration="2403000" />
+      <workItem from="1663640533283" duration="5653000" />
+      <workItem from="1663646349039" duration="1435000" />
+      <workItem from="1663657580151" duration="1042000" />
+      <workItem from="1663658738675" duration="6806000" />
+      <workItem from="1663668194701" duration="1354000" />
+      <workItem from="1663669576025" duration="162000" />
+      <workItem from="1663719882245" duration="22156000" />
+      <workItem from="1663805572847" duration="3546000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1662880154018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662880154018</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1662883311915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662883311915</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1662895488354</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662895488354</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <created>1662898342636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662898342636</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1662949964262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662949964262</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <created>1662952153600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662952153600</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1662955025141</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662955025141</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1662955463674</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662955463674</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Initial creation of template class MyVector">
+      <created>1662972303543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662972303543</updated>
+    </task>
+    <task id="LOCAL-00010">
+      <created>1663641769764</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663641769764</updated>
+    </task>
+    <task id="LOCAL-00011">
+      <created>1663643966150</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663643966150</updated>
+    </task>
+    <task id="LOCAL-00012">
+      <created>1663644079114</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663644079114</updated>
+    </task>
+    <task id="LOCAL-00013">
+      <created>1663657979278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663657979279</updated>
+    </task>
+    <task id="LOCAL-00014">
+      <created>1663658982490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663658982490</updated>
+    </task>
+    <task id="LOCAL-00015">
+      <created>1663660055768</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663660055768</updated>
+    </task>
+    <task id="LOCAL-00016">
+      <created>1663725717257</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663725717257</updated>
+    </task>
+    <task id="LOCAL-00017">
+      <created>1663730889616</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663730889616</updated>
+    </task>
+    <task id="LOCAL-00018">
+      <created>1663730916924</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663730916924</updated>
+    </task>
+    <task id="LOCAL-00019" summary="using find_if">
+      <created>1663741891424</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663741891424</updated>
+    </task>
+    <task id="LOCAL-00020" summary="level 3 should work">
+      <created>1663807221268</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663807221268</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial creation of template class MyVector" />
+    <MESSAGE value="using find_if" />
+    <MESSAGE value="level 3 should work" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 3 should work" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/words.cpp</url>
+          <line>93</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="test" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

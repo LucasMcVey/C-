@@ -1,0 +1,99 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 4: Words
+ */
+
+#include <iostream>
+#include <string>
+#include <unistd.h>
+#include <vector>
+#include <algorithm>
+#include <sstream>
+
+using namespace std;
+
+
+template <class T>
+class MyVector {
+public:
+    typedef T* iterator; // creates an alias of the T* type called iterator
+    MyVector() {}
+
+
+    iterator begin() {
+        return &items[0];
+    }
+    iterator end() {
+        return &items[used];
+    }
+    int size() {
+        return used;
+    }
+    iterator insert (iterator position, const T& item) {
+        for (MyVector<T>::iterator i = &items[999]; i > position; i--) {
+            *i = *(i - 1);
+        }
+        *position = item;
+        ++used;
+        return position;
+
+    }
+private:
+    T items[1000];
+    int used = 0;
+};
+
+int main(int argc, char** argv)
+{
+
+MyVector<string> words;
+
+    enum {
+        total,
+        unique
+    } mode = total;
+
+    for (int c; (c = getopt(argc, argv, "tu")) != -1;) {
+        switch (c) {
+        case 't':
+            mode = total;
+            break;
+        case 'u':
+            mode = unique;
+            break;
+        }
+    }
+    argc -= optind;
+    argv += optind;
+    string word;
+    int count = 0;
+
+
+    string input_string;
+    while (getline(cin, word)){
+        stringstream s(word);
+        if (word.empty()) {
+            break;
+        }
+
+        while (s >> input_string) {
+            count += 1;
+                   while (find (words.begin(), words.end(), input_string) == words.end()) {
+                    words.insert(words.begin(), input_string);
+                    break;
+                }
+            }
+     }
+
+    switch (mode) {
+        case total:
+            cout << "Total: " << count << '\n';
+            break;
+        case unique:
+            cout << "Unique: " << words.size() << '\n';
+            break;
+    }
+
+    return 0;
+}
+

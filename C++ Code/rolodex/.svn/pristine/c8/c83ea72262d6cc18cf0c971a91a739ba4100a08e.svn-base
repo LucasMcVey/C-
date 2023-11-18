@@ -1,0 +1,79 @@
+//
+// COMP2711,8801 Computer Programming 2
+// Flinders University
+//
+
+#ifndef ROLODEX_H
+#define ROLODEX_H
+
+#include <string>
+#include "Rolodex.h"
+#include "Rolodex.cpp"
+
+
+
+class Rolodex {
+public:
+
+        sentinel_ = new Item;
+        sentinel_->next = sentinel_;
+        sentinel_->prev = sentinel_;
+        current_ = sentinel_;
+
+
+    /**
+     * Creates a new empty Rolodex.
+     */
+
+    /**
+     * Returns true if the Rolodex is positioned before the first card.
+     */
+    bool isBeforeFirst() const;
+
+    /**
+     * Returns true if the Rolodex is positioned after the last card.
+     */
+    bool isAfterLast() const;
+
+    /**
+     * Rotates the Rolodex one card forwards.
+     */
+    void rotateForward();
+
+    /**
+     * Rotates the Rolodex one card backwards.
+     */
+    void rotateBackward();
+
+    /**
+     * Returns the value of the current card.
+     */
+    const std::string& currentValue() const;
+    /**
+     * Inserts a new card after the current card and positions the Rolodex
+     * at the newly inserted card.
+     *
+     * @param value The value to insert into a new card.
+     */
+    void insertAfterCurrent(const std::string& value);
+
+    /**
+     * Inserts a new card before the current card and positions the Rolodex
+     * at the newly inserted card.
+     *
+     * @param value The value to insert into a new card.
+     */
+    void insertBeforeCurrent(const std::string& value);
+
+private:
+    struct RolodexItem {
+        std::string value_;
+        RolodexItem* next_;
+        RolodexItem* prev_;
+    };
+    // Add instance variables here
+
+
+};
+
+#endif //ROLODEX_H

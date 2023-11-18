@@ -1,0 +1,33 @@
+/**
+ * Computer Programming 2 (COMP2711, COMP8801)
+ * Practical 1: Quite Good Numbers
+ */
+#include <iostream>
+#include <cstdlib>
+#include <climits>
+#include <cmath>
+
+
+using namespace std;
+
+
+
+int main(int argc, char* argv[]) {
+    const int limit = argc > 1 ? atoi(argv[1]) : 99999;
+    const int badness = argc > 2 ? atoi(argv[2]) : 6;
+
+    for (int candidate = 2; candidate < limit; candidate++) {
+        int total = 1;
+        for (int factor = 2; factor < candidate; factor++) {
+            if (candidate % factor == 0) {
+                total += factor;
+            }
+        }
+        if (candidate >= (total - badness) && candidate <= (total + badness)) {
+            cout << candidate << " ";
+        }
+    }
+    return 0;
+}
+
+
